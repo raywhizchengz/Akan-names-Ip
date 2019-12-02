@@ -16,7 +16,7 @@ var femaleAkanNames = [
   "Yaa",
   "Afua"
 ];
-
+// calcukation of the day of the week//
 function dayOfTheWeek(day, month, year) {
   let yearCode, centuryCode;
 
@@ -42,7 +42,7 @@ function dayOfTheWeek(day, month, year) {
 }
 
 function getAkanName() {
-  // Collecting form data
+  // Collecting form data and getting akan name//
   var formData = document.forms[0];
   var day, month, year, gender;
 
@@ -53,7 +53,7 @@ function getAkanName() {
   gender = formData.gender.value;
 
   let dowOfBirth = dayOfTheWeek(day, month, year);
-
+//alert i.e result or output//
   if (gender === "male") {
     alert("Your male akan name is " + maleAkanNames[dowOfBirth]);
   } else if (gender === "female") {
