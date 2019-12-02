@@ -16,21 +16,8 @@ var femaleAkanNames = [
   "Yaa",
   "Afua"
 ];
-// Collecting form data
-var formData = document.forms[0];
-var day, month, year, gender;
 
-day = parseInt(formData.date.value);
-month = parseInt(formData.month.value);
-year = parseInt(formData.year.value);
-
-if (formData.gender.value === "male") {
-  gender = "male";
-} else {
-  gender = "female";
-}
-
-function dayOfTheWeek() {
+function dayOfTheWeek(day, month, year) {
   let yearCode, centuryCode;
 
   yearCode = year % 100;
@@ -55,9 +42,19 @@ function dayOfTheWeek() {
 }
 
 function getAkanName() {
-  let dowOfBirth = dayOfTheWeek();
+  // Collecting form data
+  var formData = document.forms[0];
+  var day, month, year, gender;
 
-  if (gender == "male") {
+  day = parseInt(formData.date.value);
+  month = parseInt(formData.month.value);
+  year = parseInt(formData.year.value);
+
+  gender = formData.gender.value;
+
+  let dowOfBirth = dayOfTheWeek(day, month, year);
+
+  if (gender === "male") {
     alert("Your male akan name is " + maleAkanNames[dowOfBirth]);
   } else if (gender === "female") {
     alert("Your female akan name is " + femaleAkanNames[dowOfBirth]);
