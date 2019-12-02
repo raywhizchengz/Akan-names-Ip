@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style2.css/styles.css" type="text/css" />
+    <title>Akan Name Generator.</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1><strong>AKAN NAME GENERATOR.</strong></h1>
+    </div>
+    <div class="container">
+      <p class="introduction"></p>
+      <span class="T">T</span>his site will help you to be able to know what
+      your Akan name would be. <br />
+      To be able to know, fill out this form.
+      <p>Enter your details here.</p>
+      <p>Year of birth</p>
+      <form>
+        <label>Day Of Birth</label>
+        <input placeholder="DD" type="number" name="date" min="1" max="31"/><br />
+        <label>Month Of Birth</label>
+        <input placeholder="MM" type="number" name="month" min="1" max="12"/><br />
+        <label>Year Of Birth</label>
+        <input placeholder="YYYY" type="number" name="year" /><br />
+        <fieldset>
+          <legend>Gender</legend>
+          <input type="radio" name="gender" value="female" />Female<br />
+          <input type="radio" name="gender" value="male" />Male.
+        </fieldset>
+        <button onclick="getAkanName()">SUBMIT</button>
+      </form>
+      <br />
+      <section>
+        <p class="yourAkanName">Your Akan name would have been</p>
+        <p id="feedback"></p>
+      </section>
+      <div class="footer">
+        <h2>REACH ME.</h2>
+        <ul>
+          <li>raychengole97@gmail.com</li>
+          <li>+254 700 775 732</li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
