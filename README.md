@@ -8,3 +8,12 @@ The Akan names generated, are based on how the Akan people of Ghana name their c
 The Akan-Names web application implements the use of forms (in its .html file), functions, and control structures (in its .js file) to take user input, process it, and generate the Akan name.
 ### Instructions for opening/installation ###
 you need to have a browser installed in your computer
+#### Operation ####
+Once the webpage with the application is loaded on your browser, the user needs to fill in the form as instructed and submit for their Akan name to be generated.
+
+Information that will be required:
+
+The century of one's birth
+The year of one's birth
+The month and day of one's birth
+The gender of the user
